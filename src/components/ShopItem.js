@@ -10,8 +10,8 @@ const ShopItem = (props) => {
 
   return (
     <>
-      <Card className="text-center" style={{display: `flex`,alignItems:`center`}}>
-        <Card.Img style={{ width: "18vw" }} variant="top" src={props.image} />
+      <Card className="text-center" style={{display: `flex`,alignItems:`center`, justifyContent:`center`}}>
+        <Card.Img style={{ height: "60%" }} variant="top" src={props.image} />
         <Card.Body>
           <Card.Title>{props.title}</Card.Title>
           <Card.Text>₪ {props.price}</Card.Text>
