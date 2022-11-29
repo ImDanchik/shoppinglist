@@ -1,4 +1,5 @@
 import ShopItem from "./components/ShopItem";
+import { Row, Col } from "react-bootstrap";
 
 const App = () => {
   const items = [
@@ -21,8 +22,7 @@ const App = () => {
   ];
 
   return (
-    <div>
-
+    <div style={{ margin: `50px`, display: `flex`, flexDirection: `row`, justifyContent: `center` }}>
       {
         items.map(item => <ShopItem image={item.image} title={item.title} text={item.text} />)
       }
