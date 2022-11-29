@@ -1,25 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import ShopItem from "./components/ShopItem";
 
-function App() {
+const App = () => {
+  const items = [
+    {
+      image: "https://www.tnuva.co.il/uploads/f_606ee43fa87cf_1617880127.jpg",
+      title: "Milk",
+      text: "Whole 3% milk",
+    },
+    {
+      image:
+        "https://osemcat.signature-it.com/images/Fittings/osem-hq/Upload_Pictures/Prod_Pic/6910091/Catalog/6910091_7290006567048_Enlarge.jpg",
+      title: " קוסקוס",
+      text: "זה כולה קוסקוס אחי",
+    },
+    {
+      image: "https://m.pricez.co.il/ProductPictures/7290008409100.jpg",
+      title: "שניצל",
+      text: "זה טעים",
+    },
+  ];
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+
+      {
+        items.map(item => <ShopItem image={item.image} title={item.title} text={item.text} />)
+      }
     </div>
   );
-}
+};
 
 export default App;
