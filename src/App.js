@@ -53,9 +53,11 @@ const App = () => {
 
   return (
     <div style={{ margin: `50px`, display: `flex`, flexDirection: `row`, justifyContent: `center` }}>
+      <Row xs={1} md={3} className="justify-content-md-center">
       {
         items.map(item => <ShopItem image={item.image} title={item.title} text={item.text} />)
       }
+      </Row>
     </div>
   );
 };
