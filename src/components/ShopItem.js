@@ -10,7 +10,7 @@ const ShopItem = (props) => {
 
   return (
     <>
-      <Card className="text-center">
+      <Card className="text-center" style={{display: `flex`,alignItems:`center`}}>
         <Card.Img style={{ width: "18vw" }} variant="top" src={props.image} />
         <Card.Body>
           <Card.Title>{props.title}</Card.Title>
@@ -22,6 +22,7 @@ const ShopItem = (props) => {
       </Card>
 
       <Modal show={showModal}>
+        <center>
         <Modal.Header>
           <Modal.Title>{props.title}</Modal.Title>
         </Modal.Header>
@@ -38,6 +39,7 @@ const ShopItem = (props) => {
             Close
           </button>
         </Modal.Footer>
+        </center>
       </Modal>
     </>
   );

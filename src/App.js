@@ -86,8 +86,7 @@ const App = () => {
         display: `flex`,
         flexDirection: `row`,
         justifyContent: `center`,
-      }}
-    >
+      }}>
       <Row md={4}>
       {items.map((item) => (
         <ShopItem image={item.image} title={item.title} text={item.text} price={item.price}/>
